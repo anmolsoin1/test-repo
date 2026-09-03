@@ -1,0 +1,11 @@
+version: 0.1
+runson: linux
+autosplit: true
+concurrency: 1
+
+testDiscovery:
+  type: raw
+  mode: static
+  command: echo "dummy discovery"
+
+testRunnerCommand: echo "dummy test run"
