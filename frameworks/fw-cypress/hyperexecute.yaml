@@ -1,0 +1,53 @@
+version: 0.1
+runson: linux
+
+runtime:
+  language: node
+  version: 20
+
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 1
+globalTimeout: 30
+testSuiteTimeout: 30
+testSuiteStep: 10
+
+cypress: true
+cypressOps:
+  Build: "HE Playground - Cypress Native (the-internet)"
+  Tags: ["he-playground", "fw-cypress", "cypress-native", "linux"]
+  BuildTags: ["cypress-13", "autosplit"]
+  Network: true
+  FullHar: true
+  ProjectName: "he-playground-cypress"
+
+pre:
+  - npm ci
+  - npx cypress install
+  - npx cypress version
+
+testDiscovery:
+  mode: static
+  type: raw
+  command: ls cypress/e2e
+
+testRunnerCommand: npx cypress run --spec ./cypress/e2e/$test --browser=chrome-latest
+
+scenarioCommandStatusOnly: true
+
+failFast:
+  maxNumberOfTests: 10
+
+report: true
+partialReports:
+  - type: json
+    location: cypress/results
+
+uploadArtefacts:
+  - name: cypress-results
+    path:
+      - cypress/results/**/*
+    type: artefact
+
+jobLabel: ['he-playground','fw-cypress']

@@ -1,0 +1,7 @@
+.dotnet/
+obj/
+TestResults/
+*.log
+job*.json
+stage-*.json
+run*.log

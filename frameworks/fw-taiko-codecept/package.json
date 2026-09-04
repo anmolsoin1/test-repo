@@ -1,0 +1,21 @@
+{
+  "name": "fw-taiko-codecept",
+  "version": "1.0.0",
+  "description": "HyperExecute playground: taiko (REPL-style) + codeceptjs (REST helper) on stage",
+  "main": "index.js",
+  "scripts": {
+    "test:taiko": "npx taiko taiko/the-internet-login.js",
+    "test:codecept": "npx codeceptjs run",
+    "test:codecept:smoke": "npx codeceptjs run --grep @smoke",
+    "test:codecept:junit": "MOCHA_FILE=reports/junit.xml npx codeceptjs run --reporter mocha-junit-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "codeceptjs": "^4.1.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "taiko": "^1.5.0"
+  }
+}

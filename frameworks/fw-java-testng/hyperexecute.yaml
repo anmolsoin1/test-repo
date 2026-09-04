@@ -1,0 +1,22 @@
+---
+version: "0.2"
+globalTimeout: 20
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+framework:
+  name: maven/testng
+  discoveryType: method
+  discoveryMode: remote
+  defaultReports: true
+
+mergeArtifacts: true
+uploadArtefacts:
+  - name: surefire-reports
+    path:
+      - target/surefire-reports/**
+
+jobLabel: ['he-playground', 'fw-java-testng']

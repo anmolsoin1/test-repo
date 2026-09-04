@@ -1,0 +1,25 @@
+---
+version: "0.2"
+globalTimeout: 20
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+# Without this, every scenario is marked skipped ("no test id associated")
+# on stage even though the test executed. With it, scenario status follows
+# the runner command exit code (scenarios show "completed").
+scenarioCommandStatusOnly: true
+
+runtime:
+  language: dotnet
+  version: "8"
+
+framework:
+  name: dotnet/nunit
+  version: "8"
+  discoveryType: method
+  discoveryMode: remote
+  defaultReports: true
+
+jobLabel: ['he-playground', 'fw-dotnet']

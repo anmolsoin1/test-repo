@@ -1,0 +1,37 @@
+---
+version: "0.1"
+globalTimeout: 15
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+scenarioCommandStatusOnly: true
+
+runtime:
+  language: python
+  version: "3.10"
+
+pre:
+  - pip install -r requirements.txt
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/login_*.py
+
+testRunnerCommand: python3 $test
+
+env:
+  LT_USERNAME: anmolsoin
+  LT_ACCESS_KEY: LT_GsJOkDD7fZFOAaA0AMBVK2muSGFuiz6BysimcQeReBnfK8m
+
+uploadArtefacts:
+  - name: selenium-logs
+    path:
+      - logs/
+
+jobLabel: ['he-playground', 'fw-selenium']

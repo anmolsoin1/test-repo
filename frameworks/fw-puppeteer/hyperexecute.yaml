@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+  - npx puppeteer browsers install chrome-headless-shell
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.spec.js
+testRunnerCommand: node runner.js $test
+scenarioCommandStatusOnly: true
+report: true
+partialReports:
+  - type: xml
+    frameworkName: junit
+    location: reports/
+mergeArtifacts: true
+uploadArtefacts:
+  - name: puppeteer-junit-report
+    path:
+      - reports/
+jobLabel: ['he-playground', 'fw-puppeteer']

@@ -1,0 +1,28 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+  # taiko downloads its own chromium via postinstall; rerun installer as a no-op safety net
+  - node node_modules/taiko/lib/install.js || true
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls taiko/*.js
+testRunnerCommand: npx taiko $test
+scenarioCommandStatusOnly: true
+mergeArtifacts: true
+uploadArtefacts:
+  - name: taiko-run-logs
+    path:
+      - "*.log"
+jobLabel: ['he-playground', 'fw-taiko']

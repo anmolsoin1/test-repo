@@ -1,0 +1,12 @@
+{
+  "name": "fw-puppeteer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HyperExecute playground: Puppeteer (plain node scripts + hand-rolled JUnit XML)",
+  "scripts": {
+    "test": "node runner.js"
+  },
+  "dependencies": {
+    "puppeteer": "23.11.1"
+  }
+}

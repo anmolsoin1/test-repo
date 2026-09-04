@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls codecept/*_test.js
+# --grep @smoke demonstrates codeceptjs tag filtering (3 of 4 scenarios tagged @smoke)
+testRunnerCommand: MOCHA_FILE=reports/junit-$(basename $test .js).xml npx codeceptjs run $test --grep @smoke --reporter mocha-junit-reporter
+scenarioCommandStatusOnly: true
+report: true
+partialReports:
+  - frameworkName: junit
+    location: reports/
+    type: xml
+mergeArtifacts: true
+uploadArtefacts:
+  - name: codeceptjs-junit-report
+    path:
+      - reports/
+jobLabel: ['he-playground', 'fw-codeceptjs']
