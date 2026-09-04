@@ -1,17 +1,30 @@
 ---
-version: "0.2"
+version: "0.1"
 globalTimeout: 15
+testSuiteTimeout: 10
+testSuiteStep: 5
 runson: linux
 autosplit: true
-concurrency: 2
+concurrency: 1
+retryOnFailure: false
+maxRetries: 0
+
+runtime:
+  language: node
+  version: "18"
 
 pre:
   - npm ci
 
-framework:
-  name: wdio/mocha
-  discoveryType: spec
-  discoveryMode: local
-  defaultReports: true
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls specs/*.spec.js
 
-jobLabel: ['he-playground', 'fw-wdio-mocha']
+testRunnerCommand: npx wdio run wdio.conf.js --spec $test
+
+env:
+  LT_USERNAME: anmolsoin
+  LT_ACCESS_KEY: LT_GsJOkDD7fZFOAaA0AMBVK2muSGFuiz6BysimcQeReBnfK8m
+
+jobLabel: ['he-playground', 'fw-wdio-v1-grid']

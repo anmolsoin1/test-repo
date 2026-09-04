@@ -1,0 +1,19 @@
+---
+version: "0.1"
+globalTimeout: 8
+testSuiteTimeout: 5
+testSuiteStep: 1
+runson: linux
+autosplit: true
+concurrency: 1
+retryOnFailure: true
+maxRetries: 1
+scenarioCommandStatusOnly: true
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls cases/rotate.sh cases/stable_pass.sh
+testRunnerCommand: bash "$test"
+env:
+  OUTCOME: ${OUTCOME}
+jobLabel: ['he-playground', 'fw-lifecycle-rotate']

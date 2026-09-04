@@ -1,0 +1,20 @@
+---
+version: "0.1"
+globalTimeout: 8
+testSuiteTimeout: 5
+testSuiteStep: 2
+runson: linux
+autosplit: true
+concurrency: 1
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+post:
+  - echo "post step running, then failing"
+  - exit 1
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls cases/stable_pass.sh
+testRunnerCommand: bash "$test"
+jobLabel: ['he-playground', 'fw-lifecycle-post-fail']
