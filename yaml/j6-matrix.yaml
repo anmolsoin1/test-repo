@@ -1,0 +1,27 @@
+---
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: ${matrix.os}
+autosplit: false
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+matrix:
+  os: [linux, win]
+  case: [node_pass.js, node_fail.js]
+
+runtime:
+  language: node
+  version: "20"
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: echo cases/${matrix.case}
+
+testRunnerCommand: node "$test"
+
+jobLabel: ['he-playground', 'j6-os-matrix']

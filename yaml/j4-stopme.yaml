@@ -1,0 +1,19 @@
+---
+version: "0.1"
+globalTimeout: 15
+testSuiteTimeout: 15
+testSuiteStep: 15
+runson: linux
+autosplit: true
+concurrency: 1
+retryOnFailure: false
+maxRetries: 0
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls cases/sleep600.sh
+
+testRunnerCommand: bash "$test"
+
+jobLabel: ['he-playground', 'j4-stopme']

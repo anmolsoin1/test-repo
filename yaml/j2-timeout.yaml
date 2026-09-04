@@ -1,0 +1,19 @@
+---
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 5
+testSuiteStep: 1
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls cases/sleep120.sh cases/pass.sh
+
+testRunnerCommand: bash "$test"
+
+jobLabel: ['he-playground', 'j2-timeout']

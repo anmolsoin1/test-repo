@@ -1,0 +1,19 @@
+---
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 1
+retryOnFailure: true
+maxRetries: 1
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls cases/pass.sh cases/fail.sh
+
+testRunnerCommand: bash "$test"
+
+jobLabel: ['he-playground', 'j5-retry']
