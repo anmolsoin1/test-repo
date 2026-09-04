@@ -1,0 +1,28 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: python
+  version: "3.10"
+pre:
+  - pip install --quiet behave requests
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls features/*.feature
+testRunnerCommand: behave $test --tags=@smoke --junit --junit-directory=reports/$(basename $test .feature)
+report: true
+partialReports:
+  location: reports
+  type: xml
+  frameworkName: pytest
+uploadArtefacts:
+  - name: behave-junit
+    path: ["reports/"]
+jobLabel: ['he-playground', 'fw-bdd-smoke']

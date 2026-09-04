@@ -1,0 +1,22 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: ${matrix.os}
+autosplit: true
+concurrency: 3
+parallelism: 1
+retryOnFailure: false
+maxRetries: 0
+matrix:
+  os: [linux, mac, win]
+  case: [pass]
+pre:
+  - python3 --version
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: echo platform_check.py
+testRunnerCommand: python3 $test
+scenarioCommandStatusOnly: true
+jobLabel: ['he-playground', 'fw-osmatrix']

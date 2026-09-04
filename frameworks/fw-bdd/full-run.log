@@ -1,0 +1,18 @@
+Generating TraceID for tracking request: 01M1PCVGMXBH68C2059WGDS1WX 
+
+
+Execution Plan
+Mode:    autosplit
+Runson:    linux
+Concurrency:    2
+Report:    enabled
+
+✔ Dependency binary downloaded successfully
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-bdd/.updatedhyperexecute.yaml upload completed in 4.330597584s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-bdd/hyperexecute-code-b5888f63-b45b-4565-9170-599f20a12918.zip upload completed in 2.050544291s
+File: mask-b5888f63-b45b-4565-9170-599f20a12918.yaml upload completed in 2.088435875s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+Stopping pipeline gracefully
+context done and stopping SSE
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=b5888f63-b45b-4565-9170-599f20a12918
+

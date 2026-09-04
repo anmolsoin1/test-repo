@@ -1,0 +1,180 @@
+{"level":"debug","time":"2026-09-04T19:52:39.412+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T19:52:39.413+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T19:52:40.180+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T19:52:40.180+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PCSNCFS29GZWRS4H2CBRYN \n"}
+{"level":"debug","time":"2026-09-04T19:52:42.366+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T19:52:42.367+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T19:52:42.367+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:52:42.367+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:52:42.368+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T19:52:43.907+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"error","time":"2026-09-04T19:52:44.647+0530","caller":"core/lifecycle.go:132","msg":"2026-09-04T19:52:38+05:30    error    ERR::YML::VAL     Invalid yaml content: Cannot infer individual parallelism,either provide global parallelism or at least one of win_parallelism, linux_parallelism,  mac_parallelism!!"}
+{"level":"debug","time":"2026-09-04T19:52:44.647+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T19:52:44.647+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T19:52:44.647+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T19:52:44.647+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2026-09-04T19:52:44.647+0530","caller":"cmd/bin.go:399","msg":"Exiting application due to error ERR::YML::VAL     Invalid yaml content: Cannot infer individual parallelism,either provide global parallelism or at least one of win_parallelism, linux_parallelism,  mac_parallelism!!"}
+{"level":"debug","time":"2026-09-04T19:53:11.931+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T19:53:11.932+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T19:53:12.675+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T19:53:12.675+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PCTN9RQW4PTMHY8Q75N9NB \n"}
+{"level":"debug","time":"2026-09-04T19:53:15.660+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T19:53:15.661+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T19:53:15.661+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:15.665+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:15.665+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T19:53:17.272+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"error","time":"2026-09-04T19:53:18.012+0530","caller":"core/lifecycle.go:132","msg":"2026-09-04T19:53:11+05:30    error    ERR::YML::VAL     Invalid yaml content: Cannot infer individual parallelism,either provide global parallelism or at least one of win_parallelism, linux_parallelism,  mac_parallelism!!"}
+{"level":"debug","time":"2026-09-04T19:53:18.012+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T19:53:18.012+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T19:53:18.012+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T19:53:18.012+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2026-09-04T19:53:18.012+0530","caller":"cmd/bin.go:399","msg":"Exiting application due to error ERR::YML::VAL     Invalid yaml content: Cannot infer individual parallelism,either provide global parallelism or at least one of win_parallelism, linux_parallelism,  mac_parallelism!!"}
+{"level":"debug","time":"2026-09-04T19:53:28.543+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T19:53:28.544+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T19:53:29.302+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T19:53:29.302+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PCV5GZQKEW8WPCJ4PHYZZT \n"}
+{"level":"debug","time":"2026-09-04T19:53:31.756+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T19:53:31.756+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T19:53:31.756+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:31.756+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:31.757+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T19:53:33.245+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T19:53:33.928+0530","caller":"yamlconfigmanager/setup.go:1665","msg":"dynamic discovery redirect: flag off, keeping mode=dynamic"}
+{"level":"info","time":"2026-09-04T19:53:33.928+0530","caller":"core/lifecycle.go:142","msg":"HyperExecute Config validated successfully"}
+{"level":"debug","time":"2026-09-04T19:53:33.928+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T19:53:33.928+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T19:53:33.928+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T19:53:33.928+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2026-09-04T19:53:43.026+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T19:53:43.027+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T19:53:43.780+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T19:53:43.780+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PCVKNTKQNXE9KSJ5AEYVHH \n"}
+{"level":"debug","time":"2026-09-04T19:53:46.011+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T19:53:46.012+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T19:53:46.012+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:46.012+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:46.013+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T19:53:47.577+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T19:53:48.310+0530","caller":"yamlconfigmanager/setup.go:1665","msg":"dynamic discovery redirect: flag off, keeping mode=dynamic"}
+{"level":"debug","time":"2026-09-04T19:53:48.310+0530","caller":"yamlconfigmanager/setup.go:560","msg":"Tunnel: false"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:993","msg":"\nExecution Plan"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:792","msg":"Mode:    hybrid"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:846","msg":"Parallelism:     Mac - 2 Linux - 2 Windows - 2  Default - 2"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:854","msg":"Runson:    ${matrix.os}"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:862","msg":"Concurrency:    2"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:926","msg":"Report:    disabled"}
+{"level":"info","time":"2026-09-04T19:53:48.310+0530","caller":"models/HypertestYamlConfig.go:1006","msg":""}
+{"level":"debug","time":"2026-09-04T19:53:48.310+0530","caller":"filevalidator/setup.go:50","msg":"Warning: Checking data.json file in current directory, no dataJsonPath found in .hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:48.310+0530","caller":"filevalidator/setup.go:54","msg":"Warning: data.json file doesn't exist"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"core/lifecycle.go:399","msg":"Job ID: 51467907-bd14-4954-9b2a-f018c11cc1d6"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"events/manager.go:97","msg":"Starting event manager"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"events/manager.go:99","msg":"SSE enabled, getting SSE connection"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"core/lifecycle.go:402","msg":"User - anmolsoin, triggered job with ID 51467907-bd14-4954-9b2a-f018c11cc1d6 from CLI"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"archivemanager/setup.go:341","msg":"digestMap: map[]"}
+{"level":"debug","time":"2026-09-04T19:53:51.479+0530","caller":"archivemanager/setup.go:347","msg":"Creating archive of target directory: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T19:53:51.481+0530","caller":"core/lifecycle.go:556","msg":"Zip file size: 2.83 kB"}
+{"level":"debug","time":"2026-09-04T19:53:51.481+0530","caller":"core/lifecycle.go:566","msg":"Archive location: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-51467907-bd14-4954-9b2a-f018c11cc1d6.zip\n"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"receptionmanager/setup.go:451","msg":"only one runtime entry detected, mapping it to older yaml format"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"receptionmanager/setup.go:470","msg":"number of entries in partialreports: 1, switching to new yaml format"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"receptionmanager/setup.go:221","msg":"policy enforce: feature flag off, skipping enforcement"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"receptionmanager/setup.go:355","msg":"Uploading yaml : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"storage/azure.go:59","msg":"Payload size: 4.14 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T19:53:51.482+0530","caller":"utils/azcopy.go:133","msg":"Downloading dependency binary ..................."}
+{"level":"debug","time":"2026-09-04T19:53:51.524+0530","caller":"utils/azcopy.go:90","msg":"Downloading dependency to upload files"}
+{"level":"debug","time":"2026-09-04T19:53:52.907+0530","caller":"events/manager.go:288","msg":"connection to hyperexecute server established successfully."}
+{"level":"info","time":"2026-09-04T19:53:53.851+0530","caller":"utils/azcopy.go:108","msg":"✔ Dependency binary downloaded successfully"}
+{"level":"debug","time":"2026-09-04T19:53:53.851+0530","caller":"utils/azcopy.go:184","msg":"returning from fallback"}
+{"level":"debug","time":"2026-09-04T19:53:55.894+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0165\nTotal time taken to upload(min) :0.0333\n, stderr: "}
+{"level":"info","time":"2026-09-04T19:53:55.894+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml upload completed in 4.412194667s"}
+{"level":"debug","time":"2026-09-04T19:53:55.894+0530","caller":"storage/azure.go:59","msg":"Payload size: 2.83 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-51467907-bd14-4954-9b2a-f018c11cc1d6.zip"}
+{"level":"debug","time":"2026-09-04T19:53:57.939+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0113\nTotal time taken to upload(min) :0.0334\n, stderr: "}
+{"level":"info","time":"2026-09-04T19:53:57.939+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-51467907-bd14-4954-9b2a-f018c11cc1d6.zip upload completed in 2.044895167s"}
+{"level":"debug","time":"2026-09-04T19:53:57.939+0530","caller":"core/lifecycle.go:607","msg":"Successfully deleted code archive: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-51467907-bd14-4954-9b2a-f018c11cc1d6.zip\n"}
+{"level":"debug","time":"2026-09-04T19:53:57.940+0530","caller":"storage/azure.go:59","msg":"Payload size: 495 B, source path mask-51467907-bd14-4954-9b2a-f018c11cc1d6.yaml"}
+{"level":"debug","time":"2026-09-04T19:54:01.984+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.002\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total,                               \nTotal time taken to upload(min) :0.0667\n, stderr: "}
+{"level":"info","time":"2026-09-04T19:54:01.984+0530","caller":"storage/azure.go:122","msg":"File: mask-51467907-bd14-4954-9b2a-f018c11cc1d6.yaml upload completed in 4.044301417s"}
+{"level":"debug","time":"2026-09-04T19:54:01.984+0530","caller":"httpclient/client.go:45","msg":"[DEBUG] POST https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher/api/dispatcher"}
+{"level":"info","time":"2026-09-04T19:54:03.226+0530","caller":"dispatchermanager/setup.go:94","msg":"Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:741","msg":"Job progress won't be tracked as no-track flag is set true"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:823","msg":"Context canceled"}
+{"level":"info","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:826","msg":"Stopping pipeline gracefully"}
+{"level":"info","time":"2026-09-04T19:54:03.226+0530","caller":"events/manager.go:338","msg":"context done and stopping SSE"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"events/manager.go:256","msg":"Stopping event manager"}
+{"level":"info","time":"2026-09-04T19:54:03.226+0530","caller":"jobmanager/manager.go:145","msg":"Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=51467907-bd14-4954-9b2a-f018c11cc1d6\n"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T19:54:03.226+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2026-09-04T20:03:07.991+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T20:03:07.992+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T20:03:08.943+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T20:03:08.943+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PDCVC4YX1BH1C7GBVHG9RZ \n"}
+{"level":"debug","time":"2026-09-04T20:03:10.996+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T20:03:10.997+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T20:03:10.997+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:10.997+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:10.998+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T20:03:12.581+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T20:03:13.301+0530","caller":"yamlconfigmanager/setup.go:1665","msg":"dynamic discovery redirect: flag off, keeping mode=dynamic"}
+{"level":"info","time":"2026-09-04T20:03:13.301+0530","caller":"core/lifecycle.go:142","msg":"HyperExecute Config validated successfully"}
+{"level":"debug","time":"2026-09-04T20:03:13.301+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T20:03:13.301+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T20:03:13.301+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T20:03:13.301+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2026-09-04T20:03:14.113+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T20:03:14.114+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T20:03:14.882+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T20:03:14.882+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PDD1C8PG37473MZED8Q8EY \n"}
+{"level":"debug","time":"2026-09-04T20:03:16.865+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T20:03:16.866+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T20:03:16.866+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:16.866+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:16.867+0530","caller":"yamlconfigmanager/setup.go:2003","msg":"Environment variable not set against the variable - matrix.os mentioned in yaml"}
+{"level":"debug","time":"2026-09-04T20:03:18.531+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T20:03:19.290+0530","caller":"yamlconfigmanager/setup.go:1665","msg":"dynamic discovery redirect: flag off, keeping mode=dynamic"}
+{"level":"debug","time":"2026-09-04T20:03:19.290+0530","caller":"yamlconfigmanager/setup.go:560","msg":"Tunnel: false"}
+{"level":"info","time":"2026-09-04T20:03:19.290+0530","caller":"models/HypertestYamlConfig.go:993","msg":"\nExecution Plan"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:792","msg":"Mode:    hybrid"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:846","msg":"Parallelism:     Mac - 1 Linux - 1 Windows - 1  Default - 1"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:854","msg":"Runson:    ${matrix.os}"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:862","msg":"Concurrency:    3"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:926","msg":"Report:    disabled"}
+{"level":"info","time":"2026-09-04T20:03:19.291+0530","caller":"models/HypertestYamlConfig.go:1006","msg":""}
+{"level":"debug","time":"2026-09-04T20:03:19.291+0530","caller":"filevalidator/setup.go:50","msg":"Warning: Checking data.json file in current directory, no dataJsonPath found in .hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:19.291+0530","caller":"filevalidator/setup.go:54","msg":"Warning: data.json file doesn't exist"}
+{"level":"debug","time":"2026-09-04T20:03:22.630+0530","caller":"core/lifecycle.go:399","msg":"Job ID: 14521712-601c-4005-b1e9-ab3911fb7c41"}
+{"level":"debug","time":"2026-09-04T20:03:22.630+0530","caller":"events/manager.go:97","msg":"Starting event manager"}
+{"level":"debug","time":"2026-09-04T20:03:22.630+0530","caller":"core/lifecycle.go:402","msg":"User - anmolsoin, triggered job with ID 14521712-601c-4005-b1e9-ab3911fb7c41 from CLI"}
+{"level":"debug","time":"2026-09-04T20:03:22.630+0530","caller":"events/manager.go:99","msg":"SSE enabled, getting SSE connection"}
+{"level":"debug","time":"2026-09-04T20:03:22.631+0530","caller":"archivemanager/setup.go:341","msg":"digestMap: map[]"}
+{"level":"debug","time":"2026-09-04T20:03:22.631+0530","caller":"archivemanager/setup.go:347","msg":"Creating archive of target directory: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix"}
+{"level":"debug","time":"2026-09-04T20:03:22.637+0530","caller":"core/lifecycle.go:556","msg":"Zip file size: 3.39 kB"}
+{"level":"debug","time":"2026-09-04T20:03:22.637+0530","caller":"core/lifecycle.go:566","msg":"Archive location: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-14521712-601c-4005-b1e9-ab3911fb7c41.zip\n"}
+{"level":"debug","time":"2026-09-04T20:03:22.638+0530","caller":"receptionmanager/setup.go:441","msg":"number of entries in runtimes: 0, switching to new yaml format"}
+{"level":"debug","time":"2026-09-04T20:03:22.638+0530","caller":"receptionmanager/setup.go:470","msg":"number of entries in partialreports: 0, switching to new yaml format"}
+{"level":"debug","time":"2026-09-04T20:03:22.638+0530","caller":"receptionmanager/setup.go:221","msg":"policy enforce: feature flag off, skipping enforcement"}
+{"level":"debug","time":"2026-09-04T20:03:22.638+0530","caller":"receptionmanager/setup.go:355","msg":"Uploading yaml : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:22.639+0530","caller":"storage/azure.go:59","msg":"Payload size: 4.01 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:24.330+0530","caller":"events/manager.go:288","msg":"connection to hyperexecute server established successfully."}
+{"level":"debug","time":"2026-09-04T20:03:24.797+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.016\nTotal time taken to upload(min) :0.0334\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:03:24.797+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml upload completed in 2.158730416s"}
+{"level":"debug","time":"2026-09-04T20:03:24.797+0530","caller":"storage/azure.go:59","msg":"Payload size: 3.39 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-14521712-601c-4005-b1e9-ab3911fb7c41.zip"}
+{"level":"debug","time":"2026-09-04T20:03:26.845+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0136\nTotal time taken to upload(min) :0.0334\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:03:26.845+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-14521712-601c-4005-b1e9-ab3911fb7c41.zip upload completed in 2.047693375s"}
+{"level":"debug","time":"2026-09-04T20:03:26.845+0530","caller":"core/lifecycle.go:607","msg":"Successfully deleted code archive: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-14521712-601c-4005-b1e9-ab3911fb7c41.zip\n"}
+{"level":"debug","time":"2026-09-04T20:03:26.845+0530","caller":"storage/azure.go:59","msg":"Payload size: 445 B, source path mask-14521712-601c-4005-b1e9-ab3911fb7c41.yaml"}
+{"level":"debug","time":"2026-09-04T20:03:28.912+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0018\nTotal time taken to upload(min) :0.0334\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:03:28.912+0530","caller":"storage/azure.go:122","msg":"File: mask-14521712-601c-4005-b1e9-ab3911fb7c41.yaml upload completed in 2.067016333s"}
+{"level":"debug","time":"2026-09-04T20:03:28.913+0530","caller":"httpclient/client.go:45","msg":"[DEBUG] POST https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher/api/dispatcher"}
+{"level":"info","time":"2026-09-04T20:03:29.968+0530","caller":"dispatchermanager/setup.go:94","msg":"Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200"}
+{"level":"debug","time":"2026-09-04T20:03:29.968+0530","caller":"core/lifecycle.go:741","msg":"Job progress won't be tracked as no-track flag is set true"}
+{"level":"debug","time":"2026-09-04T20:03:29.968+0530","caller":"core/lifecycle.go:823","msg":"Context canceled"}
+{"level":"info","time":"2026-09-04T20:03:29.968+0530","caller":"core/lifecycle.go:826","msg":"Stopping pipeline gracefully"}
+{"level":"info","time":"2026-09-04T20:03:29.968+0530","caller":"events/manager.go:338","msg":"context done and stopping SSE"}
+{"level":"info","time":"2026-09-04T20:03:29.968+0530","caller":"jobmanager/manager.go:145","msg":"Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=14521712-601c-4005-b1e9-ab3911fb7c41\n"}
+{"level":"debug","time":"2026-09-04T20:03:29.968+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T20:03:29.969+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T20:03:29.968+0530","caller":"events/manager.go:256","msg":"Stopping event manager"}
+{"level":"debug","time":"2026-09-04T20:03:29.969+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T20:03:29.969+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}

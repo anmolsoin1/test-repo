@@ -6,8 +6,8 @@ testSuiteStep: 10
 runson: linux
 autosplit: true
 concurrency: 2
-failFast: true
-maxNumberOfTests: 2
+failFast:
+  maxNumberOfTests: 2
 retryOnFailure: false
 maxRetries: 0
 

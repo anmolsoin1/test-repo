@@ -1,0 +1,22 @@
+Generating TraceID for tracking request: 01M1PCWVB1A5J779YE295PQZAH 
+
+
+Execution Plan
+Mode:    autosplit
+Runson:    linux
+Concurrency:    2
+Report:    enabled
+Artefacts:
+    junit-xml:    reports/
+    execution-log:    out/execution.log
+    screenshots:    out/screenshot-add-to-cart.png
+
+✔ Dependency binary downloaded successfully
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-reports/.updatedhyperexecute.yaml upload completed in 4.147716417s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-reports/hyperexecute-code-f4328744-915f-4634-9a65-9d835241e3b8.zip upload completed in 2.047295333s
+File: mask-f4328744-915f-4634-9a65-9d835241e3b8.yaml upload completed in 2.043543208s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+context done and stopping SSE
+Stopping pipeline gracefully
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=f4328744-915f-4634-9a65-9d835241e3b8
+

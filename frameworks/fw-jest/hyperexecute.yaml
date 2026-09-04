@@ -1,0 +1,31 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.test.js
+testRunnerCommand: npx jest $test --reporters=default --reporters=jest-junit
+scenarioCommandStatusOnly: true
+report: true
+partialReports:
+  frameworkName: junit
+  location: reports/
+  type: xml
+mergeArtifacts: true
+uploadArtefacts:
+  - name: jest-junit-report
+    path:
+      - reports/
+jobLabel: ['he-playground', 'fw-jest']

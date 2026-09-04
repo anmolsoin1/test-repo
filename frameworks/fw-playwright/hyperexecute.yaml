@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+  - npx playwright install chromium
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.spec.js
+testRunnerCommand: npx playwright test $test --project=chromium
+report: true
+partialReports:
+  frameworkName: playwright
+  location: playwright-report
+  type: html
+uploadArtefacts:
+  - name: Playwright-Results
+    path:
+      - test-results/**
+      - reports/**
+jobLabel: ['he-playground', 'fw-playwright']

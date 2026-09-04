@@ -1,0 +1,17 @@
+---
+version: "0.2"
+globalTimeout: 15
+runson: linux
+autosplit: true
+concurrency: 2
+
+pre:
+  - npm ci
+
+framework:
+  name: wdio/mocha
+  discoveryType: spec
+  discoveryMode: local
+  defaultReports: true
+
+jobLabel: ['he-playground', 'fw-wdio-mocha']

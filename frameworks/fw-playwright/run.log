@@ -1,0 +1,23 @@
+Generating TraceID for tracking request: 01M1PCVSDX8HXHT34ZMXATNSQ6 
+
+WARN: No Artefact name provided, Assigning a default value of Hyperexecute-Artefact-1
+
+Execution Plan
+Mode:    autosplit
+Runson:    linux
+Concurrency:    2
+Report:    enabled
+Artefacts:
+    Hyperexecute-Artefact-1
+        test-results/
+        reports/
+
+✔ Dependency binary downloaded successfully
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-playwright/.updatedhyperexecute.yaml upload completed in 5.928170458s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-playwright/hyperexecute-code-50e411bc-f96d-4742-bd9d-d9bbeee154ea.zip upload completed in 2.042598625s
+File: mask-50e411bc-f96d-4742-bd9d-d9bbeee154ea.yaml upload completed in 2.03996925s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+Stopping pipeline gracefully
+context done and stopping SSE
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=50e411bc-f96d-4742-bd9d-d9bbeee154ea
+

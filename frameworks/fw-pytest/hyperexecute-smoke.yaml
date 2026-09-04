@@ -1,0 +1,30 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+runtime:
+  language: python
+  version: "3.10"
+pre:
+  - pip install pytest requests
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/test_*.py
+testRunnerCommand: bash -c 'name=$(basename "$test" .py); mkdir -p reports; pytest "$test" -m smoke --junitxml="reports/junit-$name.xml" -v'
+report: true
+partialReports:
+  location: reports/
+  type: xml
+  frameworkName: pytest
+mergeArtifacts: true
+uploadArtefacts:
+  - name: pytest-run-log
+    path: ["pytest-run.log"]
+jobLabel: ['he-playground', 'pytest-e2e-smoke']

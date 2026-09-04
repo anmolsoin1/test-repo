@@ -1,0 +1,19 @@
+Generating TraceID for tracking request: 01M1PDN1V40NXY484J3YC0BHZQ 
+
+
+Execution Plan
+Mode:    autosplit
+Runson:    linux
+Concurrency:    2
+Report:    enabled
+Artefacts:
+    pytest-run-log:    pytest-run.log
+
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-pytest/.updatedhyperexecute.yaml upload completed in 2.152521833s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-pytest/hyperexecute-code-cbe27ee3-c6ad-4ce4-a382-12cee0b4f831.zip upload completed in 2.047862042s
+File: mask-cbe27ee3-c6ad-4ce4-a382-12cee0b4f831.yaml upload completed in 2.039812959s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+context done and stopping SSE
+Stopping pipeline gracefully
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=cbe27ee3-c6ad-4ce4-a382-12cee0b4f831
+

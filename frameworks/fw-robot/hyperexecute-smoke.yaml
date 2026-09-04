@@ -1,0 +1,36 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+runtime:
+  language: python
+  version: "3.10"
+
+pre:
+  - pip install robotframework robotframework-requests
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.robot
+
+testRunnerCommand: robot --include smoke --outputdir results --xunit results/xunit.xml $test
+
+report: true
+partialReports:
+  location: results
+  type: xml
+  frameworkName: junit
+
+uploadArtifacts:
+  - name: robot-results
+    path:
+      - results/
+
+jobLabel: ['he-playground', 'fw-robot-smoke-only']

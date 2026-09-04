@@ -1,0 +1,62 @@
+{"level":"debug","time":"2026-09-04T20:37:28.211+0530","caller":"cmd/bin.go:144","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2026-09-04T20:37:28.213+0530","caller":"cmd/bin.go:145","msg":"Current binary version: 0.2.762, Environment: stage"}
+{"level":"debug","time":"2026-09-04T20:37:28.995+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.600 Max:0.2.762} "}
+{"level":"info","time":"2026-09-04T20:37:28.996+0530","caller":"cmd/bin.go:202","msg":"Generating TraceID for tracking request: 01M1PFBQB5KE2AZQQJGEBKDXX4 \n"}
+{"level":"debug","time":"2026-09-04T20:37:32.162+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-09-04T20:37:32.162+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-09-04T20:37:32.164+0530","caller":"yamlconfigmanager/setup.go:736","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:32.164+0530","caller":"yamlconfigmanager/setup.go:118","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:33.661+0530","caller":"yamlconfigmanager/setup.go:2240","msg":"Autodetecting test type in files of path : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid"}
+{"level":"debug","time":"2026-09-04T20:37:33.661+0530","caller":"yamlconfigmanager/setup.go:2282","msg":"File in which test type is detected - /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/package.json"}
+{"level":"debug","time":"2026-09-04T20:37:33.661+0530","caller":"yamlconfigmanager/setup.go:2283","msg":"Pre command in which test type is detected - "}
+{"level":"debug","time":"2026-09-04T20:37:33.662+0530","caller":"yamlconfigmanager/setup.go:516","msg":"Automatic test type detected - playwright"}
+{"level":"debug","time":"2026-09-04T20:37:33.662+0530","caller":"yamlconfigmanager/setup.go:1665","msg":"dynamic discovery redirect: flag off, keeping mode=dynamic"}
+{"level":"debug","time":"2026-09-04T20:37:33.662+0530","caller":"yamlconfigmanager/setup.go:560","msg":"Tunnel: false"}
+{"level":"info","time":"2026-09-04T20:37:33.662+0530","caller":"models/HypertestYamlConfig.go:993","msg":"\nExecution Plan"}
+{"level":"info","time":"2026-09-04T20:37:33.662+0530","caller":"models/HypertestYamlConfig.go:794","msg":"Mode:    autosplit"}
+{"level":"info","time":"2026-09-04T20:37:33.662+0530","caller":"models/HypertestYamlConfig.go:854","msg":"Runson:    linux"}
+{"level":"info","time":"2026-09-04T20:37:33.662+0530","caller":"models/HypertestYamlConfig.go:862","msg":"Concurrency:    2"}
+{"level":"info","time":"2026-09-04T20:37:33.663+0530","caller":"models/HypertestYamlConfig.go:926","msg":"Report:    disabled"}
+{"level":"info","time":"2026-09-04T20:37:33.663+0530","caller":"models/HypertestYamlConfig.go:1006","msg":""}
+{"level":"debug","time":"2026-09-04T20:37:33.663+0530","caller":"filevalidator/setup.go:50","msg":"Warning: Checking data.json file in current directory, no dataJsonPath found in .hyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:33.663+0530","caller":"filevalidator/setup.go:54","msg":"Warning: data.json file doesn't exist"}
+{"level":"debug","time":"2026-09-04T20:37:37.185+0530","caller":"core/lifecycle.go:399","msg":"Job ID: 3ce611f2-716e-47fc-bbd7-3543f26ea99e"}
+{"level":"debug","time":"2026-09-04T20:37:37.186+0530","caller":"core/lifecycle.go:402","msg":"User - anmolsoin, triggered job with ID 3ce611f2-716e-47fc-bbd7-3543f26ea99e from CLI"}
+{"level":"debug","time":"2026-09-04T20:37:37.186+0530","caller":"core/lifecycle.go:405","msg":"User has provided playwright as test type for the job with ID 3ce611f2-716e-47fc-bbd7-3543f26ea99e"}
+{"level":"debug","time":"2026-09-04T20:37:37.186+0530","caller":"events/manager.go:97","msg":"Starting event manager"}
+{"level":"debug","time":"2026-09-04T20:37:37.187+0530","caller":"events/manager.go:99","msg":"SSE enabled, getting SSE connection"}
+{"level":"debug","time":"2026-09-04T20:37:37.187+0530","caller":"archivemanager/setup.go:341","msg":"digestMap: map[]"}
+{"level":"debug","time":"2026-09-04T20:37:37.188+0530","caller":"archivemanager/setup.go:347","msg":"Creating archive of target directory: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid"}
+{"level":"debug","time":"2026-09-04T20:37:37.194+0530","caller":"core/lifecycle.go:556","msg":"Zip file size: 4.81 kB"}
+{"level":"debug","time":"2026-09-04T20:37:37.194+0530","caller":"core/lifecycle.go:566","msg":"Archive location: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/hyperexecute-code-3ce611f2-716e-47fc-bbd7-3543f26ea99e.zip\n"}
+{"level":"debug","time":"2026-09-04T20:37:37.196+0530","caller":"receptionmanager/setup.go:451","msg":"only one runtime entry detected, mapping it to older yaml format"}
+{"level":"debug","time":"2026-09-04T20:37:37.196+0530","caller":"receptionmanager/setup.go:470","msg":"number of entries in partialreports: 1, switching to new yaml format"}
+{"level":"debug","time":"2026-09-04T20:37:37.196+0530","caller":"receptionmanager/setup.go:221","msg":"policy enforce: feature flag off, skipping enforcement"}
+{"level":"debug","time":"2026-09-04T20:37:37.197+0530","caller":"receptionmanager/setup.go:355","msg":"Uploading yaml : /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:37.197+0530","caller":"storage/azure.go:59","msg":"Payload size: 3.91 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/.updatedhyperexecute.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:37.197+0530","caller":"utils/azcopy.go:133","msg":"Downloading dependency binary ..................."}
+{"level":"debug","time":"2026-09-04T20:37:37.382+0530","caller":"utils/azcopy.go:90","msg":"Downloading dependency to upload files"}
+{"level":"debug","time":"2026-09-04T20:37:38.633+0530","caller":"events/manager.go:288","msg":"connection to hyperexecute server established successfully."}
+{"level":"info","time":"2026-09-04T20:37:40.017+0530","caller":"utils/azcopy.go:108","msg":"✔ Dependency binary downloaded successfully"}
+{"level":"debug","time":"2026-09-04T20:37:40.017+0530","caller":"utils/azcopy.go:184","msg":"returning from fallback"}
+{"level":"debug","time":"2026-09-04T20:37:42.058+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0156\nTotal time taken to upload(min) :0.0334\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:37:42.058+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/.updatedhyperexecute.yaml upload completed in 4.861183792s"}
+{"level":"debug","time":"2026-09-04T20:37:42.058+0530","caller":"storage/azure.go:59","msg":"Payload size: 4.81 kB, source path /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/hyperexecute-code-3ce611f2-716e-47fc-bbd7-3543f26ea99e.zip"}
+{"level":"debug","time":"2026-09-04T20:37:44.103+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0192\nTotal time taken to upload(min) :0.0333\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:37:44.103+0530","caller":"storage/azure.go:122","msg":"File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/hyperexecute-code-3ce611f2-716e-47fc-bbd7-3543f26ea99e.zip upload completed in 2.045122792s"}
+{"level":"debug","time":"2026-09-04T20:37:44.104+0530","caller":"core/lifecycle.go:607","msg":"Successfully deleted code archive: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-grid/hyperexecute-code-3ce611f2-716e-47fc-bbd7-3543f26ea99e.zip\n"}
+{"level":"debug","time":"2026-09-04T20:37:44.104+0530","caller":"storage/azure.go:59","msg":"Payload size: 451 B, source path mask-3ce611f2-716e-47fc-bbd7-3543f26ea99e.yaml"}
+{"level":"debug","time":"2026-09-04T20:37:46.151+0530","caller":"storage/azure.go:83","msg":"Azcopy output: \n\r100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 0.0018\nTotal time taken to upload(min) :0.0333\n, stderr: "}
+{"level":"info","time":"2026-09-04T20:37:46.151+0530","caller":"storage/azure.go:122","msg":"File: mask-3ce611f2-716e-47fc-bbd7-3543f26ea99e.yaml upload completed in 2.047386709s"}
+{"level":"debug","time":"2026-09-04T20:37:46.152+0530","caller":"httpclient/client.go:45","msg":"[DEBUG] POST https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher/api/dispatcher"}
+{"level":"info","time":"2026-09-04T20:37:47.317+0530","caller":"dispatchermanager/setup.go:94","msg":"Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200"}
+{"level":"debug","time":"2026-09-04T20:37:47.317+0530","caller":"core/lifecycle.go:741","msg":"Job progress won't be tracked as no-track flag is set true"}
+{"level":"debug","time":"2026-09-04T20:37:47.317+0530","caller":"core/lifecycle.go:823","msg":"Context canceled"}
+{"level":"info","time":"2026-09-04T20:37:47.317+0530","caller":"core/lifecycle.go:826","msg":"Stopping pipeline gracefully"}
+{"level":"info","time":"2026-09-04T20:37:47.317+0530","caller":"events/manager.go:338","msg":"context done and stopping SSE"}
+{"level":"debug","time":"2026-09-04T20:37:47.318+0530","caller":"events/manager.go:256","msg":"Stopping event manager"}
+{"level":"info","time":"2026-09-04T20:37:47.318+0530","caller":"jobmanager/manager.go:145","msg":"Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=3ce611f2-716e-47fc-bbd7-3543f26ea99e\n"}
+{"level":"debug","time":"2026-09-04T20:37:47.319+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-04T20:37:47.319+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-04T20:37:47.319+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-04T20:37:47.319+0530","caller":"cmd/bin.go:360","msg":"main: all goroutines have finished."}

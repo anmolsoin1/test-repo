@@ -1,0 +1,19 @@
+Generating TraceID for tracking request: 01M1PE9GCCMPBC7FTPB4RF27BY 
+
+
+Execution Plan
+Mode:    autosplit
+Runson:    linux
+Concurrency:    2
+Report:    enabled
+Artefacts:
+    jest-junit-report:    reports/
+
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-jest/.updatedhyperexecute.yaml upload completed in 2.14728475s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-jest/hyperexecute-code-5623d7c2-394d-42df-891e-66ed8fdc7185.zip upload completed in 4.042667625s
+File: mask-5623d7c2-394d-42df-891e-66ed8fdc7185.yaml upload completed in 2.046089333s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+context done and stopping SSE
+Stopping pipeline gracefully
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=5623d7c2-394d-42df-891e-66ed8fdc7185
+

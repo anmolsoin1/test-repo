@@ -1,0 +1,18 @@
+Generating TraceID for tracking request: 01M1PDD1C8PG37473MZED8Q8EY 
+
+
+Execution Plan
+Mode:    hybrid
+Parallelism:     Mac - 1 Linux - 1 Windows - 1  Default - 1
+Runson:    ${matrix.os}
+Concurrency:    3
+Report:    disabled
+
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/.updatedhyperexecute.yaml upload completed in 2.158730416s
+File: /Users/anmolsoin/knowledge-base-LT/he-playground/fw-osmatrix/hyperexecute-code-14521712-601c-4005-b1e9-ab3911fb7c41.zip upload completed in 2.047693375s
+File: mask-14521712-601c-4005-b1e9-ab3911fb7c41.yaml upload completed in 2.067016333s
+Dispatch attempt to https://api-stage-hyperexecute.lambdatestinternal.com/dispatcher returned status 200
+Stopping pipeline gracefully
+context done and stopping SSE
+Job Link: https://stage-hyperexecute.lambdatestinternal.com/hyperexecute/task?jobId=14521712-601c-4005-b1e9-ab3911fb7c41
+
