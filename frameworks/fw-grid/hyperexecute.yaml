@@ -25,6 +25,6 @@ testRunnerCommand: npx playwright test $test
 
 env:
   LT_USERNAME: anmolsoin
-  LT_ACCESS_KEY: ${LT_ACCESS_KEY}
+  LT_ACCESS_KEY: LT_GsJOkDD7fZFOAaA0AMBVK2muSGFuiz6BysimcQeReBnfK8m
 
 jobLabel: ['he-playground', 'fw-grid-cdp']
