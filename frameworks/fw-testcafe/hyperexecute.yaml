@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 15
+testSuiteTimeout: 15
+testSuiteStep: 10
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+  - npx -y @puppeteer/browsers install chrome@stable
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.js
+testRunnerCommand: node runner.js $test
+scenarioCommandStatusOnly: true
+report: true
+partialReports:
+  - type: xml
+    frameworkName: junit
+    location: reports/
+mergeArtifacts: true
+uploadArtefacts:
+  - name: testcafe-xunit-report
+    path:
+      - reports/
+jobLabel: ['he-playground', 'fw-testcafe']

@@ -1,0 +1,9 @@
+{
+  "name": "fw-testcafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HyperExecute playground — TestCafe raw mode on stage",
+  "dependencies": {
+    "testcafe": "3.7.2"
+  }
+}

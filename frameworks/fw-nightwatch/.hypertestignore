@@ -1,0 +1,8 @@
+node_modules/
+browsers/
+reports/
+screens/
+logs/
+*.log
+.updatedhyperexecute.yaml
+hyperexecute-cli.log

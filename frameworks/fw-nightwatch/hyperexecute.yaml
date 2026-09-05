@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 30
+testSuiteTimeout: 20
+testSuiteStep: 10
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+runtime:
+  language: node
+  version: "20"
+pre:
+  - npm ci
+  - npm run setup:chrome
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.js
+testRunnerCommand: npx nightwatch --env local $test
+scenarioCommandStatusOnly: true
+report: true
+partialReports:
+  frameworkName: junit
+  location: reports/
+  type: xml
+mergeArtifacts: true
+uploadArtefacts:
+  - name: nightwatch-junit-report
+    path:
+      - reports/
+jobLabel: ['he-playground', 'fw-nightwatch']

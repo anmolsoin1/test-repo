@@ -3,7 +3,6 @@ import os
 import sys
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 
 HUB = "https://{}:{}@stage-hub.lambdatestinternal.com/wd/hub"
 BUILD = "HE-Selenium-Playground"
@@ -37,10 +36,11 @@ def mark(driver, status, remark):
 
 
 def run(test_name, body):
-    """body(driver) -> remark string; raise to fail."""
+    """body(driver, log) -> remark string; raise to fail."""
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     os.makedirs("logs", exist_ok=True)
-    handler = logging.FileHandler("logs/{}.log".format(test_name.replace(" ", "_")))
+    safe = "".join(c if c.isalnum() or c in "._-" else "_" for c in test_name)
+    handler = logging.FileHandler("logs/{}.log".format(safe))
     handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
     log = logging.getLogger(test_name)
     log.addHandler(handler)
@@ -48,7 +48,7 @@ def run(test_name, body):
     try:
         driver = make_driver(test_name)
         log.info("grid session started: %s", driver.session_id)
-        remark = body(driver)
+        remark = body(driver, log)
         mark(driver, "passed", remark)
         log.info("PASSED: %s", remark)
         return 0
@@ -60,13 +60,6 @@ def run(test_name, body):
     finally:
         if driver is not None:
             driver.quit()
-
-
-def login(driver, username, password):
-    driver.get("https://the-internet.herokuapp.com/login")
-    driver.find_element(By.ID, "username").send_keys(username)
-    driver.find_element(By.ID, "password").send_keys(password)
-    driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
 
 if __name__ == "__main__":

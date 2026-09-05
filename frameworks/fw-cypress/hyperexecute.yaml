@@ -15,7 +15,7 @@ testSuiteStep: 10
 
 cypress: true
 cypressOps:
-  Build: "HE Playground - Cypress Native (the-internet)"
+  Build: "HE Playground - Cypress Native v2 (locators + waits)"
   Tags: ["he-playground", "fw-cypress", "cypress-native", "linux"]
   BuildTags: ["cypress-13", "autosplit"]
   Network: true

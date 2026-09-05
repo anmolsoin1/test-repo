@@ -10,6 +10,16 @@ describe("the-internet: checkboxes", () => {
     cy.get("#checkboxes input").eq(0).check();
     cy.get("#checkboxes input").eq(0).should("be.checked");
   });
+
+  it("polls checkbox count with a should callback (retry-ability)", () => {
+    cy.visit("/checkboxes");
+    // should() with a callback re-runs until every inner assertion passes
+    // or the command timeout expires — Cypress's built-in retry-ability.
+    cy.get("#checkboxes input").should(($inputs) => {
+      expect($inputs).to.have.length(2);
+      expect($inputs.eq(1)).to.be.checked; // second box is checked by default
+    });
+  });
 });
 
 describe("DELIBERATE FAILURE — expected to fail", () => {

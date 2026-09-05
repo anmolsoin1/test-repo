@@ -1,0 +1,41 @@
+version: "0.1"
+globalTimeout: 30
+testSuiteTimeout: 30
+testSuiteStep: 10
+
+runson: linux
+
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+scenarioCommandStatusOnly: true
+
+pre:
+  - bundle config set --local deployment 'true'
+  - bundle config set --local path 'vendor/bundle'
+  - bundle install --jobs 4
+
+cacheKey: '{{ checksum "Gemfile.lock" }}'
+cacheDirectories:
+  - vendor/bundle
+
+env:
+  LT_USERNAME: anmolsoin
+  LT_ACCESS_KEY: LT_GsJOkDD7fZFOAaA0AMBVK2muSGFuiz6BysimcQeReBnfK8m
+  BASE_URL: https://the-internet.herokuapp.com
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls spec/*_spec.rb
+
+testRunnerCommand: bundle exec rspec $test --format documentation --format html --out report.html
+
+uploadArtefacts:
+  - name: rspec-report
+    path:
+      - report.html
+
+jobLabel: ['he-playground', 'fw-ruby', 'rspec-capybara']

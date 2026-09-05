@@ -1,0 +1,14 @@
+{
+  "name": "he-fw-nightwatch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HyperExecute Nightwatch sample — local headless Chrome on the runner, tests against the-internet.herokuapp.com",
+  "scripts": {
+    "setup:chrome": "bash scripts/setup-chrome.sh",
+    "test": "nightwatch --env local"
+  },
+  "devDependencies": {
+    "@puppeteer/browsers": "2.10.8",
+    "nightwatch": "3.12.3"
+  }
+}

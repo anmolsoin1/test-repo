@@ -14,6 +14,9 @@ module.exports = defineConfig({
   ],
   use: {
     baseURL: 'https://the-internet.herokuapp.com',
+    // the-internet.herokuapp.com has no data-testid attributes; point
+    // getByTestId at "id" so tests/dynamic-controls.spec.js can demo it.
+    testIdAttribute: 'id',
     screenshot: 'only-on-failure',
     headless: true,
   },

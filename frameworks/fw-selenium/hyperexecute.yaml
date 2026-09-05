@@ -21,7 +21,7 @@ pre:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: ls tests/login_*.py
+  command: ls tests/spec_*.py
 
 testRunnerCommand: python3 $test
 
