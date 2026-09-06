@@ -1,0 +1,10 @@
+TAG filter active: smoke
+test_smoke_valid_login_lands_on_secure_area (test_login.LoginTests) ... ok
+
+Ran 1 tests in 9.92s
+JUnit report: reports/junit-test_login.xml
+
+Artefacts Upload Logs for pyunit-smoke-log
+Artefact uploaded successfully
+Paths downloaded:-
+pyunit-run.log

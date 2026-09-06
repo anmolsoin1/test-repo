@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Smoke subset used by hyperexecute-smoke.yaml (tag/group-filtered variant). -->
+<suite name="fw-playwright-java-smoke">
+  <test name="smoke-tests">
+    <classes>
+      <class name="com.ltqa.fw.JsonPlaceholderApiTest">
+        <methods>
+          <include name="api_getPost_returns200AndExpectedShape"/>
+          <include name="api_createPost_echoesPayloadWith201"/>
+        </methods>
+      </class>
+      <class name="com.ltqa.fw.ExampleUiTest">
+        <methods>
+          <include name="ui_exampleCom_titleAndHeading"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

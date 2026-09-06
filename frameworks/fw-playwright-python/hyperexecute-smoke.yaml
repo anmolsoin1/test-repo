@@ -1,0 +1,31 @@
+version: "0.1"
+globalTimeout: 15
+testSuiteTimeout: 15
+testSuiteStep: 10
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+runtime:
+  language: python
+  version: "3.10"
+pre:
+  - pip install -r requirements.txt
+  - python -m playwright install chromium
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/test_*.py
+testRunnerCommand: bash -c 'name=$(basename "$test" .py); mkdir -p reports; pytest "$test" -c tests/pytest.ini -m smoke --junitxml="reports/junit-$name.xml" -v'
+report: true
+partialReports:
+  - location: reports/
+    type: xml
+    frameworkName: pytest
+mergeArtifacts: true
+uploadArtefacts:
+  - name: playwright-run-log
+    path: ["playwright-run.log"]
+jobLabel: ['he-playground', 'playwright-python-smoke']

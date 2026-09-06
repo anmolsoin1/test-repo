@@ -1,0 +1,47 @@
+---
+version: 0.1
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: linux
+
+autosplit: true
+retryOnFailure: false
+maxRetries: 1
+concurrency: 2
+
+shell: bash
+
+scenarioCommandStatusOnly: true
+
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - .m2
+  - .playwright-browsers
+
+mergeArtifacts: true
+
+uploadArtefacts:
+  - name: TestRunLog
+    path:
+      - target/test-run.log
+  - name: SurefireReports
+    path:
+      - target/surefire-reports/**
+
+testDiscovery:
+  type: raw
+  mode: static
+  command: grep 'include name' xml/testng.xml | sed 's/.*name="//' | sed 's/".*//'
+
+testRunnerCommand: PLAYWRIGHT_BROWSERS_PATH=./.playwright-browsers mvn test -B -Dmaven.repo.local=./.m2 "-Dtest=*#$test"
+
+pre:
+  - mvn -B -q -Dmaven.repo.local=./.m2 test-compile
+  - PLAYWRIGHT_BROWSERS_PATH=./.playwright-browsers mvn -B -q -Dmaven.repo.local=./.m2 exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install chromium"
+
+post:
+  - cat target/test-run.log || true
+
+jobLabel: [ "fw-playwright-java", "playwright-java", "api-plus-local-chromium", "v0.1" ]

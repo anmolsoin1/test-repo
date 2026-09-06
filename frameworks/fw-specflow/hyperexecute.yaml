@@ -1,0 +1,50 @@
+---
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 10
+
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+# On stage there is no test-id association; without this scenarios show as
+# "skipped" even though they ran. With it, status follows the runner exit code.
+scenarioCommandStatusOnly: true
+
+runtime:
+  language: dotnet
+  version: "8"
+
+pre:
+  - dotnet restore
+  - dotnet build -c Release
+
+# Raw discovery at FEATURE level: each feature file carries exactly one
+# feature-level Gherkin tag (@posts / @users). SpecFlow turns tags into NUnit
+# Categories, so the runner can filter per feature via Category=$test.
+testDiscovery:
+  type: raw
+  mode: remote
+  command: grep -rhi '^@' Features --include=\*.feature | sort -u | sed 's/@//'
+
+testRunnerCommand: dotnet test -c Release --no-build --filter "(Category=$test)" --logger "nunit;LogFileName=results.xml"
+
+mergeArtifacts: true
+
+uploadArtefacts:
+  - name: Execution_Logs
+    path:
+      - bin/Release/net8.0/logs/execution.log
+  - name: NUnit_Xml
+    path:
+      - TestResults/results.xml
+
+report: true
+partialReports:
+  - location: TestResults
+    type: xml
+    frameworkName: specflow
+
+jobLabel: ['he-playground', 'fw-specflow']

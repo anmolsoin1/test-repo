@@ -1,0 +1,47 @@
+test_regression_element_rendered_after_fact (test_dynamic_loading.DynamicLoadingTests) ... ok
+test_regression_polling_loop_waits_for_hello_world (test_dynamic_loading.DynamicLoadingTests)
+Hand-rolled polling loop (no WebDriverWait) over example 2. ... ok
+test_smoke_dynamic_loading_index_links (test_dynamic_loading.DynamicLoadingTests) ... ERROR
+test_smoke_hidden_element_appears_after_start (test_dynamic_loading.DynamicLoadingTests) ... ok
+
+======================================================================
+ERROR: test_smoke_dynamic_loading_index_links (test_dynamic_loading.DynamicLoadingTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ltuser/foreman/fw-pyunit/tests/test_dynamic_loading.py", line 74, in test_smoke_dynamic_loading_index_links
+    self.driver.find_element(By.PARTIAL_LINK_TEXT, "hidden on the page").click()
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"partial link text","selector":"hidden on the page"}
+  (Session info: chrome=152.0.7977.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5573bb26f03a <unknown>
+#1 0x5573babd74c9 <unknown>
+#2 0x5573bac2d242 <unknown>
+#3 0x5573bac2d4a1 <unknown>
+#4 0x5573bac78394 <unknown>
+#5 0x5573bac755ad <unknown>
+#6 0x5573bac2083b <unknown>
+#7 0x5573bac21621 <unknown>
+#8 0x5573bb2335f0 <unknown>
+#9 0x5573bb231c6a <unknown>
+#10 0x5573bb21c9f5 <unknown>
+#11 0x5573bb23292a <unknown>
+#12 0x5573bb205d10 <unknown>
+#13 0x5573bb25a158 <unknown>
+#14 0x5573bb25a2f5 <unknown>
+#15 0x5573bb26dbc3 <unknown>
+#16 0x7f75a2de0609 start_thread
+
+
+Ran 4 tests in 41.53s
+JUnit report: reports/junit-test_dynamic_loading.xml
+
+Artefacts Upload Logs for pyunit-run-log
+Artefact uploaded successfully
+Paths downloaded:-
+pyunit-run.log

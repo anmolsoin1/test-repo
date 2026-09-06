@@ -1,0 +1,29 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+runtime:
+  language: java
+  version: "17"
+pre:
+  - curl -fsSL https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.tgz -o jmeter.tgz && tar xzf jmeter.tgz && rm jmeter.tgz && ls -d apache-jmeter-*
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls plans/*.jmx
+testRunnerCommand: bash run_jmeter.sh "$test"
+mergeArtifacts: true
+uploadArtefacts:
+  - name: jmeter-jtl
+    path: ["reports/*.jtl"]
+  - name: jmeter-dashboards
+    path: ["reports/dashboard-*.tar.gz"]
+  - name: jmeter-run-log
+    path: ["jmeter-run.log"]
+jobLabel: ['he-playground', 'fw-jmeter']

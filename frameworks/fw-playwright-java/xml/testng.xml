@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="fw-playwright-java">
+  <test name="api-tests">
+    <classes>
+      <class name="com.ltqa.fw.JsonPlaceholderApiTest">
+        <methods>
+          <include name="api_getPost_returns200AndExpectedShape"/>
+          <include name="api_listPosts_returnsHundredItems"/>
+          <include name="api_createPost_echoesPayloadWith201"/>
+          <include name="api_getMissingPost_returns404"/>
+          <include name="api_DELIBERATE_FAILURE_wrongUserIdAssertion"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="ui-tests">
+    <classes>
+      <class name="com.ltqa.fw.ExampleUiTest">
+        <methods>
+          <include name="ui_exampleCom_titleAndHeading"/>
+          <include name="ui_exampleCom_moreInfoLinkNavigates"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

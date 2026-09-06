@@ -1,0 +1,14 @@
+TAG filter active: smoke
+Traceback (most recent call last):
+  File "/home/ltuser/foreman/fw-pyunit/run_one.py", line 122, in <module>
+    main()
+  File "/home/ltuser/foreman/fw-pyunit/run_one.py", line 108, in main
+    result = RecordingResult(sys.stdout, 2)
+  File "/home/ltuser/foreman/fw-pyunit/run_one.py", line 22, in __init__
+    super().__init__(stream, verbosity)
+TypeError: TextTestResult.__init__() missing 1 required positional argument: 'verbosity'
+
+Artefacts Upload Logs for pyunit-smoke-log
+Artefact uploaded successfully
+Paths downloaded:-
+pyunit-run.log

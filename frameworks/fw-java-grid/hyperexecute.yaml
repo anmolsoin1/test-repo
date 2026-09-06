@@ -1,0 +1,48 @@
+---
+version: "0.1"
+globalTimeout: 40
+testSuiteTimeout: 30
+testSuiteStep: 25
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+
+# stage has no test-case rows; statuses must follow the runner exit code
+scenarioCommandStatusOnly: true
+
+pre:
+  - mvn -B -q compile test-compile
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls src/test/java/com/ltplayground/grid/*Test.java | xargs -n1 basename | sed 's/\.java$//'
+
+testRunnerCommand: mvn -B -q test -Dtest=$test
+
+framework:
+  name: maven/testng
+  defaultReports: false
+  flags: []
+
+mergeArtifacts: true
+uploadArtefacts:
+  - name: surefire-reports
+    path:
+      - target/surefire-reports/**
+  - name: grid-run-log
+    path:
+      - target/grid-run.log
+
+partialReports:
+  - type: xml
+    location: target/surefire-reports
+    frameworkName: junit
+
+env:
+  LT_USERNAME: anmolsoin
+  LT_ACCESS_KEY: LT_GsJOkDD7fZFOAaA0AMBVK2muSGFuiz6BysimcQeReBnfK8m
+
+jobLabel: ['he-playground', 'fw-java-grid']

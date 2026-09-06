@@ -1,0 +1,24 @@
+test_regression_DELIBERATE_FAILURE_wrong_page_title (test_login.LoginTests)
+DELIBERATE FAILURE — asserts a wrong title to prove failure ... FAIL
+test_regression_invalid_credentials_are_rejected (test_login.LoginTests) ... ok
+test_smoke_valid_login_lands_on_secure_area (test_login.LoginTests) ... ok
+
+======================================================================
+FAIL: test_regression_DELIBERATE_FAILURE_wrong_page_title (test_login.LoginTests)
+DELIBERATE FAILURE — asserts a wrong title to prove failure
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ltuser/foreman/fw-pyunit/tests/test_login.py", line 74, in test_regression_DELIBERATE_FAILURE_wrong_page_title
+    self.assertEqual(
+AssertionError: 'The Internet' != 'This Title Does Not Exist — deliberate pyunit failure'
+- The Internet
++ This Title Does Not Exist — deliberate pyunit failure
+ : intentional mismatch
+
+Ran 3 tests in 22.28s
+JUnit report: reports/junit-test_login.xml
+
+Artefacts Upload Logs for pyunit-run-log
+Artefact uploaded successfully
+Paths downloaded:-
+pyunit-run.log

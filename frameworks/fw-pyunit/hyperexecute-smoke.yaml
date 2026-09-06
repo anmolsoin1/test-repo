@@ -1,0 +1,32 @@
+version: "0.1"
+globalTimeout: 10
+testSuiteTimeout: 10
+testSuiteStep: 5
+runson: linux
+autosplit: true
+concurrency: 2
+retryOnFailure: false
+maxRetries: 0
+scenarioCommandStatusOnly: true
+runtime:
+  language: python
+  version: "3.10"
+env:
+  TAG: smoke
+pre:
+  - pip install -r requirements.txt
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/test_*.py
+testRunnerCommand: python run_one.py "$test"
+report: true
+partialReports:
+  location: reports/
+  type: xml
+  frameworkName: unittest
+mergeArtifacts: true
+uploadArtefacts:
+  - name: pyunit-smoke-log
+    path: ["pyunit-run.log"]
+jobLabel: ['he-playground', 'pyunit-smoke']

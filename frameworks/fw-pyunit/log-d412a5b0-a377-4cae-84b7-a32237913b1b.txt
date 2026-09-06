@@ -1,0 +1,45 @@
+TAG filter active: smoke
+test_smoke_dynamic_loading_index_links (test_dynamic_loading.DynamicLoadingTests) ... ERROR
+test_smoke_hidden_element_appears_after_start (test_dynamic_loading.DynamicLoadingTests) ... ok
+
+======================================================================
+ERROR: test_smoke_dynamic_loading_index_links (test_dynamic_loading.DynamicLoadingTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ltuser/foreman/fw-pyunit/tests/test_dynamic_loading.py", line 74, in test_smoke_dynamic_loading_index_links
+    self.driver.find_element(By.PARTIAL_LINK_TEXT, "hidden on the page").click()
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"partial link text","selector":"hidden on the page"}
+  (Session info: chrome=152.0.7977.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55fe3ddc703a <unknown>
+#1 0x55fe3d72f4c9 <unknown>
+#2 0x55fe3d785242 <unknown>
+#3 0x55fe3d7854a1 <unknown>
+#4 0x55fe3d7d0394 <unknown>
+#5 0x55fe3d7cd5ad <unknown>
+#6 0x55fe3d77883b <unknown>
+#7 0x55fe3d779621 <unknown>
+#8 0x55fe3dd8b5f0 <unknown>
+#9 0x55fe3dd89c6a <unknown>
+#10 0x55fe3dd749f5 <unknown>
+#11 0x55fe3dd8a92a <unknown>
+#12 0x55fe3dd5dd10 <unknown>
+#13 0x55fe3ddb2158 <unknown>
+#14 0x55fe3ddb22f5 <unknown>
+#15 0x55fe3ddc5bc3 <unknown>
+#16 0x7f981f881609 start_thread
+
+
+Ran 2 tests in 20.43s
+JUnit report: reports/junit-test_dynamic_loading.xml
+
+Artefacts Upload Logs for pyunit-smoke-log
+Artefact uploaded successfully
+Paths downloaded:-
+pyunit-run.log

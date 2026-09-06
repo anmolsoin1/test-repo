@@ -1,0 +1,49 @@
+---
+version: 0.1
+
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: linux
+
+autosplit: true
+
+retryOnFailure: false
+
+concurrency: 1
+
+runtime:
+  language: java
+  version: 17
+
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - m2
+
+pre:
+  - mvn install -Dmaven.repo.local=m2 -Dmaven.test.skip=true -q
+
+report: true
+partialReports:
+  location: target/karate-reports
+  type: html
+  frameworkName: karate
+
+uploadArtefacts:
+  - name: KarateReports
+    path:
+      - target/karate-reports/**
+mergeArtifacts: true
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep -rl --include="*.feature" "" src/test/java/jsonplaceholder
+
+scenarioCommandStatusOnly: true
+
+# tag-filtered variant: run only @smoke scenarios, skip the deliberate failure
+testRunnerCommand: mvn test -Dtest=JsonPlaceholderRunner -DFeaturePath="$test" -DKarateTags="@smoke" -Dmaven.repo.local=m2
+
+jobLabel: [karate, fw-matrix, stage, smoke-only]

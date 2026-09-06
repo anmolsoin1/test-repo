@@ -1,0 +1,6 @@
+bin/
+obj/
+logs/
+TestResults/
+.dotnet/
+dotnet-install.sh
